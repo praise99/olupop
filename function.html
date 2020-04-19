@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>functions</title>
+
+    </head>
+    <body>
+        <script>
+            //defining the function
+            function divisor(number){
+                const arr=[]
+                let rep
+                for (let i=1; i<=number;  i++){
+                    if(i%2==0 && i%3 ==0)rep="yu-gi"
+                    else if(i%2==0 && i%5 ==0)rep="yu-oh"
+                    else if(i%3==0 && i%5 ==0)rep="gi-oh"
+                    else if (i % 2 ==0)rep="yu"
+                    else if(i % 3 ==0)rep="gi"
+                    else if (i % 5 ==0)rep="oh"
+                    else rep=i
+                   //pushing the result into an empty array
+                    arr.push(rep)
+                }
+               
+                console.log(arr)
+                
+            } 
+            //calling the function           
+            number=100
+            divisor(number)
+            //calling a function of my choice
+            number=20
+            divisor(number)
+            
+           
+            
+            
+        </script>
+    </body>
+</html>
